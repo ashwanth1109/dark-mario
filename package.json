@@ -9,5 +9,9 @@
   "license": "MIT",
   "devDependencies": {
     "parcel": "^2.0.0-alpha.2.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "p5": "^0.10.2"
   }
 }
