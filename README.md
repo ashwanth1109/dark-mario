@@ -19,4 +19,4 @@ We considered Phaser and p5 and opted for p5, being the one with a gentler learn
 
 ## OBJECTIVES
 
-### Goal #1: Build a parallax world with a sprite that appears to move on arrow key input
+- [ ] Build a parallax world with a sprite that appears to move on arrow key input
