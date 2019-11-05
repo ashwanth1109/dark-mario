@@ -1,16 +1,14 @@
 "use strict";
 
 import "normalize.css";
+import Sketch from "./sketch";
+
 console.log("Hello Dark Mario");
 
-const Sketch = p => {
-  let gray = 0;
-  p.setup = () => {
-    p.createCanvas(window.innerWidth, window.innerHeight);
-  };
-  p.draw = () => {
-    p.background(gray);
-  };
-};
+if (module.hot) {
+  module.hot.accept(() => {
+    window.location.reload();
+  });
+}
 
 new p5(Sketch);
