@@ -17,6 +17,8 @@ Theme: LEAPS AND BOUNDS
 We've chosen to start with p5.js, since we wanted an abstraction over the canvas API.
 We considered Phaser and p5 and opted for p5, being the one with a gentler learning curve.
 
+#### Reference: https://p5js.org/
+
 ## OBJECTIVES
 
 ### Goal #1: Build a parallax world that appears to move on arrow key input
