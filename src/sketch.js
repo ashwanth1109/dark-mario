@@ -1,13 +1,9 @@
-"use strict";
+if (module.hot) module.hot.accept(() => window.location.reload());
 
-const Sketch = p => {
-  let bg = 200;
-  p.setup = () => {
-    p.createCanvas(window.innerWidth, window.innerHeight);
-  };
-  p.draw = () => {
-    p.background(bg);
-  };
-};
+// Export the functions that are used by p5
+export function setup() {
+  createCanvas(windowWidth, windowHeight);
+  background(0);
+}
 
-export default Sketch;
+export function draw() {}

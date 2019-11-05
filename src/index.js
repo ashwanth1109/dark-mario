@@ -1,14 +1,11 @@
 "use strict";
 
+import p5 from "p5";
 import "normalize.css";
-import Sketch from "./sketch";
 
-console.log("Hello Dark Mario");
-
-if (module.hot) {
-  module.hot.accept(() => {
-    window.location.reload();
-  });
+import * as sketch from "./sketch";
+for (let opt in sketch) {
+  window[opt] = sketch[opt];
 }
 
-new p5(Sketch);
+new p5();

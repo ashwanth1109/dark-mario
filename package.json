@@ -3,15 +3,25 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel index.html --no-cache",
     "build": "parcel build index.html"
   },
   "license": "MIT",
   "devDependencies": {
-    "parcel": "^2.0.0-alpha.2.1"
+    "parcel": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.2.1"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
     "p5": "^0.10.2"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "assets/1",
+        "watcherGlob": "**",
+        "staticOutDir": "assets"
+      }
+    ]
   }
 }
